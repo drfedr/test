@@ -45,9 +45,9 @@ cat > /var/www/html/index.html << 'EOF'
     </style>
 </head>
 <body>
-    <h1 class="success">✓ Тест успешен!</h1>
-    <p>Порт 443 работает.</p>
-    <p class="info">Ваш IP: <strong id="ip"></strong></p>
+    <h1 class="success">Test successful!</h1>
+    <p>Port 443 is finally working.</p>
+    <p class="info">Your IP: <strong id="ip"></strong></p>
     <script>
         fetch('https://api.ipify.org?format=json')
             .then(r => r.json())
