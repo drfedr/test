@@ -71,7 +71,7 @@ if [ "$(docker ps -q -f name=3x-ui)" ]; then
 fi
 
 # Запускаем новый контейнер
-docker run -itd \
+sudo docker run -itd \
    -e XRAY_VMESS_AEAD_FORCED=false \
    -v $PWD/db/:/etc/x-ui/ \
    -v $PWD/cert/:/root/cert/ \
